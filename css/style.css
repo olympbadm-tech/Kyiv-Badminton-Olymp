@@ -1083,17 +1083,91 @@ button { font: inherit; cursor: pointer; }
 
 /* ===== Final CTA ===== */
 .cta-final {
-  background: var(--color-lime);
-  color: var(--color-black);
+  position: relative;
+  min-height: 480px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  background: var(--color-black);
+  color: var(--color-white);
   padding: 90px 0;
   text-align: center;
 }
+
+.cta-final-media {
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+  overflow: hidden;
+  background: var(--color-black);
+}
+
+.cta-final-video {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: 50% center;
+}
+
+/* same darkening gradient as the hero video, kept free of any lime/green tint */
+.cta-final-overlay {
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+  pointer-events: none;
+  background:
+    linear-gradient(180deg, rgba(8,9,18,.68) 0%, rgba(8,9,18,.18) 24%, rgba(10,22,64,.08) 48%, rgba(8,9,18,.30) 72%, rgba(8,9,18,.66) 100%);
+}
+
+.cta-final-inner {
+  position: relative;
+  z-index: 2;
+}
+
+.cta-final .eyebrow { margin-bottom: 14px; }
+
 .cta-title {
   font-family: var(--font-display);
   font-size: clamp(30px, 5vw, 52px);
   text-transform: uppercase;
   margin-bottom: 30px;
 }
+
+/* plaque reused from the hero brush (navy, solid, same clip-path/rotation) — text recolored to the brand lime */
+.cta-final-plaque {
+  display: inline-block;
+  position: relative;
+  max-width: 100%;
+  padding: .42em 1em .5em;
+  transform: rotate(1deg);
+  clip-path: polygon(
+    1% 18%, 4% 4%, 14% 9%, 28% 2%, 44% 7%, 60% 1%, 76% 6%, 90% 0%, 99% 12%,
+    97% 30%, 100% 48%, 96% 66%, 99% 84%, 92% 96%, 78% 90%, 62% 98%, 46% 92%,
+    30% 99%, 16% 91%, 3% 97%, 0% 78%, 5% 60%, 0% 40%
+  );
+  background: var(--color-blue-deep);
+}
+
+.cta-final-plaque-text {
+  display: inline-block;
+  font-family: var(--font-display-hero);
+  font-weight: 800;
+  text-transform: uppercase;
+  word-break: keep-all;
+  overflow-wrap: normal;
+  color: var(--color-lime);
+  font-size: clamp(22px, 4vw, 40px);
+  letter-spacing: .5px;
+}
+
+.cta-final .btn--primary {
+  background: var(--color-yellow);
+  color: var(--color-blue-deep);
+}
+.cta-final .btn--primary:hover { background: var(--color-white); }
 
 /* ===== Footer ===== */
 .site-footer {
@@ -1194,6 +1268,8 @@ button { font: inherit; cursor: pointer; }
   }
   .location-wrap { padding: 28px; }
 
+  .cta-final { min-height: 420px; }
+
   .video-card { width: 78vw; max-width: 300px; }
   .carousel { padding-left: 2px; }
 
@@ -1235,7 +1311,7 @@ button { font: inherit; cursor: pointer; }
 @media (max-width: 520px) {
   .hero-inner { padding-bottom: 40px; }
   .section { padding: 64px 0; }
-  .cta-final { padding: 64px 0; }
+  .cta-final { padding: 64px 0; min-height: 380px; }
   .reviews-section { padding: 96px 0 48px; }
 
   .schedule-lead { margin-top: -10px; }
