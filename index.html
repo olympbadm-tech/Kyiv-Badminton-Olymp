@@ -73,30 +73,55 @@
   </section>
 
   <!-- PRO CLUB -->
-  <section class="section" id="about">
-    <div class="container">
-      <p class="section-kicker">01 — Про клуб</p>
-      <h2 class="section-title">Це клуб, де кожна гра — <span class="accent-blue">твоя</span></h2>
-      <div class="about-grid">
-        <div class="about-text">
-          <p>«Київ Бадмінтон Олімп» — клуб для людей будь-якого віку та рівня підготовки. У нас проходять тренування, ігрові сесії та клубні зустрічі, де головне — задоволення від гри та живе спілкування.</p>
-          <p>Ми цінуємо рух, розвиток і дружню атмосферу. Тут легко знайти партнера свого рівня, прогресувати від гри до гри та завести нові знайомства серед людей, які так само кайфують від бадмінтону.</p>
+  <section class="section about-section" id="about">
+    <div class="about-bg" aria-hidden="true"></div>
+
+    <div class="about-decor" aria-hidden="true">
+      <div class="about-shuttle-track">
+        <svg class="about-trail" viewBox="0 0 240 120" focusable="false">
+          <path class="trail-line trail-line--1" pathLength="100"
+                d="M20,60 C20,20 100,20 120,60 C140,100 220,100 220,60 C220,20 140,20 120,60 C100,100 20,100 20,60 Z"/>
+          <path class="trail-line trail-line--2" pathLength="100"
+                d="M20,60 C20,20 100,20 120,60 C140,100 220,100 220,60 C220,20 140,20 120,60 C100,100 20,100 20,60 Z"/>
+          <path class="trail-line trail-line--3" pathLength="100"
+                d="M20,60 C20,20 100,20 120,60 C140,100 220,100 220,60 C220,20 140,20 120,60 C100,100 20,100 20,60 Z"/>
+        </svg>
+        <div class="about-shuttle">
+          <svg viewBox="0 0 26 32" class="about-shuttle-icon" focusable="false">
+            <path d="M13 2 C15.2 2 16.6 4.1 16.1 6.5 L20.6 24.1 C21.1 26.1 19.6 27.6 17.7 26.8 L13 24.9 L8.3 26.8 C6.4 27.6 4.9 26.1 5.4 24.1 L9.9 6.5 C9.4 4.1 10.8 2 13 2 Z" fill="#ffffff" fill-opacity="0.95"/>
+            <path d="M13 6.2 L13 24.6 M13 6.2 L9.3 23.7 M13 6.2 L16.7 23.7" stroke="rgba(14,31,110,0.3)" stroke-width="0.6" fill="none"/>
+            <ellipse cx="13" cy="5.4" rx="3.2" ry="3.7" fill="#f3f5fb"/>
+          </svg>
         </div>
-        <div class="about-facts">
-          <div class="fact-card">
-            <span class="fact-number">4</span>
-            <span class="fact-label">корти в центрі Києва</span>
+      </div>
+    </div>
+
+    <div class="container about-inner">
+      <p class="about-kicker">01 — Про клуб</p>
+      <h2 class="about-title">Це клуб, де кожна гра — твоя</h2>
+      <p class="about-lead">Граємо в центрі Києва, біля метро «Олімпійська». Різні рівні, жива гра й компанія, до якої хочеться повертатися.</p>
+
+      <div class="about-cards">
+        <div class="about-cards-col about-cards-col--a">
+          <div class="about-card about-card--navy">
+            <span class="about-card-number">4</span>
+            <span class="about-card-label">корти в центрі Києва</span>
           </div>
-          <div class="fact-card">
-            <span class="fact-number">4</span>
-            <span class="fact-label">тренувальні дні на тиждень</span>
+          <div class="about-card about-card--blue">
+            <span class="about-card-number">4</span>
+            <span class="about-card-label">тренувальні дні на тиждень</span>
           </div>
-          <div class="fact-card">
-            <span class="fact-number">2–2,5</span>
-            <span class="fact-label">години активної гри</span>
+        </div>
+        <div class="about-cards-col about-cards-col--b">
+          <div class="about-card about-card--lime">
+            <span class="about-card-number">2–2,5</span>
+            <span class="about-card-label">години активної гри</span>
           </div>
-          <div class="fact-card fact-card--wide">
-            <span class="fact-label">Біля метро «Олімпійська» — різні рівні підготовки, одна команда</span>
+          <div class="about-card about-card--yellow about-card--wide">
+            <span class="about-card-label">Біля метро «Олімпійська»</span>
+          </div>
+          <div class="about-card about-card--glass about-card--wide">
+            <span class="about-card-label">Різні рівні — одна команда</span>
           </div>
         </div>
       </div>
