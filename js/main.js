@@ -81,39 +81,7 @@
       localVideos.forEach(function (other) {
         if (other !== video) other.pause();
       });
-      pauseAllFacebookEmbeds();
     });
-  });
-
-  /* ===== Facebook video cards: click-to-load, deferred iframe ===== */
-  function pauseAllFacebookEmbeds() {
-    document.querySelectorAll('.fb-embed').forEach(function (iframe) {
-      var src = iframe.getAttribute('src');
-      iframe.setAttribute('src', src);
-    });
-  }
-
-  document.querySelectorAll('.video-card--fb').forEach(function (card) {
-    var btn = card.querySelector('.fb-play');
-    if (!btn) return;
-
-    btn.addEventListener('click', function () {
-      localVideos.forEach(function (v) { v.pause(); });
-
-      var fbSrc = card.getAttribute('data-fb-src');
-      var frame = card.querySelector('.fb-frame');
-      var iframe = document.createElement('iframe');
-      iframe.className = 'fb-embed';
-      iframe.src = fbSrc;
-      iframe.setAttribute('loading', 'lazy');
-      iframe.setAttribute('scrolling', 'no');
-      iframe.setAttribute('frameborder', '0');
-      iframe.setAttribute('allowfullscreen', 'true');
-      iframe.setAttribute('allow', 'autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share');
-
-      frame.innerHTML = '';
-      frame.appendChild(iframe);
-    }, { once: true });
   });
 
 })();

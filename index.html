@@ -225,34 +225,69 @@
   </section>
 
   <!-- SCHEDULE -->
-  <section class="section" id="schedule">
-    <div class="container">
+  <section class="section schedule-section" id="schedule">
+    <div class="schedule-decor" aria-hidden="true">
+      <div class="schedule-shuttle-track">
+        <div class="schedule-shuttle">
+          <svg viewBox="0 0 26 32" class="schedule-shuttle-icon" focusable="false">
+            <path d="M13 2 C15.2 2 16.6 4.1 16.1 6.5 L20.6 24.1 C21.1 26.1 19.6 27.6 17.7 26.8 L13 24.9 L8.3 26.8 C6.4 27.6 4.9 26.1 5.4 24.1 L9.9 6.5 C9.4 4.1 10.8 2 13 2 Z" fill="var(--color-blue)" fill-opacity="0.5"/>
+            <path d="M13 6.2 L13 24.6 M13 6.2 L9.3 23.7 M13 6.2 L16.7 23.7" stroke="var(--color-blue)" stroke-opacity="0.25" stroke-width="0.6" fill="none"/>
+            <ellipse cx="13" cy="5.4" rx="3.2" ry="3.7" fill="var(--color-blue)" fill-opacity="0.75"/>
+          </svg>
+        </div>
+      </div>
+    </div>
+
+    <div class="container schedule-inner">
       <p class="section-kicker">03 — Розклад</p>
-      <h2 class="section-title">Розклад тренувань</h2>
-      <div class="schedule-grid">
-        <article class="schedule-card">
-          <span class="schedule-day">Понеділок</span>
-          <h3 class="schedule-name">Лінгво — Старт тижня</h3>
-          <span class="schedule-time">19:00–21:30</span>
+      <h2 class="section-title">Обери свій день для гри</h2>
+      <p class="schedule-lead">Чотири тренувальні дні на тиждень — обирай зручний час і виходь на корт.</p>
+
+      <div class="schedule-cards">
+        <article class="schedule-card schedule-card--blue">
+          <div class="schedule-card-top">
+            <span class="schedule-card-day">Понеділок</span>
+            <span class="schedule-card-place">Лінгво</span>
+            <h3 class="schedule-card-name">Старт тижня</h3>
+          </div>
+          <div class="schedule-card-time">
+            <span class="schedule-card-time-value">19:00–21:30</span>
+          </div>
         </article>
-        <article class="schedule-card">
-          <span class="schedule-day">Середа</span>
-          <h3 class="schedule-name">Лінгво — Вечірній матч</h3>
-          <span class="schedule-time">19:00–21:30</span>
+        <article class="schedule-card schedule-card--lime">
+          <div class="schedule-card-top">
+            <span class="schedule-card-day">Середа</span>
+            <span class="schedule-card-place">Лінгво</span>
+            <h3 class="schedule-card-name">Вечірній матч</h3>
+          </div>
+          <div class="schedule-card-time">
+            <span class="schedule-card-time-value">19:00–21:30</span>
+          </div>
         </article>
-        <article class="schedule-card">
-          <span class="schedule-day">Субота</span>
-          <h3 class="schedule-name">Лінгво — Ранковий заряд</h3>
-          <span class="schedule-time">11:00–13:00</span>
+        <article class="schedule-card schedule-card--yellow">
+          <div class="schedule-card-top">
+            <span class="schedule-card-day">Субота</span>
+            <span class="schedule-card-place">Лінгво</span>
+            <h3 class="schedule-card-name">Ранковий заряд</h3>
+          </div>
+          <div class="schedule-card-time">
+            <span class="schedule-card-time-value">11:00–13:00</span>
+          </div>
         </article>
-        <article class="schedule-card">
-          <span class="schedule-day">Неділя</span>
-          <h3 class="schedule-name">НТУ — Легкий старт / фан-гейм</h3>
-          <span class="schedule-time">11:00–13:00</span>
+        <article class="schedule-card schedule-card--outline">
+          <div class="schedule-card-top">
+            <span class="schedule-card-day">Неділя</span>
+            <span class="schedule-card-place">НТУ</span>
+            <h3 class="schedule-card-name">Легкий старт / фан-гейм</h3>
+          </div>
+          <div class="schedule-card-time">
+            <span class="schedule-card-time-value">11:00–13:00</span>
+          </div>
         </article>
       </div>
+
       <div class="schedule-cta">
-        <a href="https://t.me/JasonGoldenBachelor" class="btn btn--primary" target="_blank" rel="noopener">Записатися</a>
+        <a href="https://t.me/JasonGoldenBachelor" class="btn btn--primary" target="_blank" rel="noopener">Записатися на тренування</a>
       </div>
     </div>
   </section>
@@ -262,8 +297,8 @@
     <div class="container container--full">
       <div class="container">
         <p class="section-kicker">04 — Відеоблог</p>
-        <h2 class="section-title">Живий бадмінтон у відео</h2>
-        <p class="section-lead">Момент гри — краще за тисячу слів. Натисни на карточку, щоб увімкнути відео.</p>
+        <h2 class="section-title">Відеоблог</h2>
+        <p class="section-lead">Тренування, ігрові моменти та атмосфера нашого клубу.</p>
       </div>
 
       <div class="carousel-wrap">
@@ -273,8 +308,9 @@
           <li class="video-card">
             <div class="video-frame">
               <video class="video-el" preload="metadata" playsinline controls
-                     poster="assets/posters/video_2026-09-21_14-50-48.jpg"
-                     src="site-materials/video_2026-09-21_14-50-48.mp4">
+                     aria-label="Відео: Атмосфера тренування"
+                     poster="assets/posters/video-blog-01.jpg"
+                     src="site-materials/video-blog/video-blog-01.mp4">
               </video>
             </div>
             <p class="video-caption">Атмосфера тренування</p>
@@ -283,8 +319,9 @@
           <li class="video-card">
             <div class="video-frame">
               <video class="video-el" preload="metadata" playsinline controls
-                     poster="assets/posters/video_2026-09-21_14-52-27.jpg"
-                     src="site-materials/video_2026-09-21_14-52-27.mp4">
+                     aria-label="Відео: У грі на корті"
+                     poster="assets/posters/video-blog-02.jpg"
+                     src="site-materials/video-blog/video-blog-02.mp4">
               </video>
             </div>
             <p class="video-caption">У грі на корті</p>
@@ -293,8 +330,9 @@
           <li class="video-card">
             <div class="video-frame">
               <video class="video-el" preload="metadata" playsinline controls
-                     poster="assets/posters/video_2026-09-21_14-52-53.jpg"
-                     src="site-materials/video_2026-09-21_14-52-53.mp4">
+                     aria-label="Відео: Обмін ударами"
+                     poster="assets/posters/video-blog-03.jpg"
+                     src="site-materials/video-blog/video-blog-03.mp4">
               </video>
             </div>
             <p class="video-caption">Обмін ударами</p>
@@ -303,8 +341,9 @@
           <li class="video-card">
             <div class="video-frame">
               <video class="video-el" preload="metadata" playsinline controls
-                     poster="assets/posters/video_2026-09-21_14-53-16.jpg"
-                     src="site-materials/video_2026-09-21_14-53-16.mp4">
+                     aria-label="Відео: Драйв на майданчику"
+                     poster="assets/posters/video-blog-04.jpg"
+                     src="site-materials/video-blog/video-blog-04.mp4">
               </video>
             </div>
             <p class="video-caption">Драйв на майданчику</p>
@@ -313,40 +352,43 @@
           <li class="video-card">
             <div class="video-frame">
               <video class="video-el" preload="metadata" playsinline controls
-                     poster="assets/posters/video_2026-09-22_11-03-03.jpg"
-                     src="site-materials/video_2026-09-22_11-03-03.mp4">
+                     aria-label="Відео: Настрій після матчу"
+                     poster="assets/posters/video-blog-05.jpg"
+                     src="site-materials/video-blog/video-blog-05.mp4">
               </video>
             </div>
             <p class="video-caption">Настрій після матчу</p>
           </li>
 
-          <!-- Facebook video cards: lazy, click-to-load -->
-          <li class="video-card video-card--fb" data-fb-src="https://www.facebook.com/plugins/video.php?height=476&amp;href=https%3A%2F%2Fwww.facebook.com%2Freel%2F2090427388485565%2F&amp;show_text=false&amp;width=267&amp;t=0">
-            <div class="video-frame fb-frame">
-              <button class="fb-play" type="button" aria-label="Завантажити відео Facebook">
-                <span class="fb-play-icon">▶</span>
-                <span class="fb-play-text">Відео з Facebook</span>
-              </button>
+          <li class="video-card">
+            <div class="video-frame">
+              <video class="video-el" preload="metadata" playsinline controls
+                     aria-label="Відео: Момент гри з клубу"
+                     poster="assets/posters/video-blog-06.jpg"
+                     src="site-materials/video-blog/video-blog-06.mp4">
+              </video>
             </div>
             <p class="video-caption">Момент гри з клубу</p>
           </li>
 
-          <li class="video-card video-card--fb" data-fb-src="https://www.facebook.com/plugins/video.php?height=476&amp;href=https%3A%2F%2Fwww.facebook.com%2Freel%2F1546872273628363%2F&amp;show_text=false&amp;width=267&amp;t=0">
-            <div class="video-frame fb-frame">
-              <button class="fb-play" type="button" aria-label="Завантажити відео Facebook">
-                <span class="fb-play-icon">▶</span>
-                <span class="fb-play-text">Відео з Facebook</span>
-              </button>
+          <li class="video-card">
+            <div class="video-frame">
+              <video class="video-el" preload="metadata" playsinline controls
+                     aria-label="Відео: Нарізка з корту"
+                     poster="assets/posters/video-blog-07.jpg"
+                     src="site-materials/video-blog/video-blog-07.mp4">
+              </video>
             </div>
             <p class="video-caption">Нарізка з корту</p>
           </li>
 
-          <li class="video-card video-card--fb" data-fb-src="https://www.facebook.com/plugins/video.php?height=476&amp;href=https%3A%2F%2Fwww.facebook.com%2Freel%2F1924170128225380%2F&amp;show_text=false&amp;width=267&amp;t=0">
-            <div class="video-frame fb-frame">
-              <button class="fb-play" type="button" aria-label="Завантажити відео Facebook">
-                <span class="fb-play-icon">▶</span>
-                <span class="fb-play-text">Відео з Facebook</span>
-              </button>
+          <li class="video-card">
+            <div class="video-frame">
+              <video class="video-el" preload="metadata" playsinline controls
+                     aria-label="Відео: Атмосфера клубу"
+                     poster="assets/posters/video-blog-08.jpg"
+                     src="site-materials/video-blog/video-blog-08.mp4">
+              </video>
             </div>
             <p class="video-caption">Атмосфера клубу</p>
           </li>
