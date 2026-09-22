@@ -912,8 +912,8 @@ button { font: inherit; cursor: pointer; }
   justify-content: center;
   z-index: 5;
 }
-.carousel-arrow--prev { left: -4px; }
-.carousel-arrow--next { right: -4px; }
+.carousel-arrow--prev { left: 8px; }
+.carousel-arrow--next { right: 8px; }
 
 /* ===== Reviews ===== */
 .reviews-section {
@@ -1144,6 +1144,7 @@ button { font: inherit; cursor: pointer; }
 
 @media (min-width: 861px) {
   .carousel-arrow { display: flex; }
+  .carousel-wrap { padding: 0 60px 8px; }
 }
 
 @media (max-width: 860px) {

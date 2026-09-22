@@ -1,0 +1,227 @@
+- generic [active] [ref=e1]:
+  - link "Перейти до контенту" [ref=e2] [cursor=pointer]:
+    - /url: "#main"
+  - banner [ref=e3]:
+    - generic [ref=e4]:
+      - link [ref=e5] [cursor=pointer]:
+        - /url: "#top"
+        - img "Логотип Київ Бадмінтон Олімп" [ref=e6]
+        - generic [ref=e7]: Київ БадмінтонОлімп
+      - navigation [ref=e8]:
+        - list [ref=e9]:
+          - listitem [ref=e10]:
+            - link "Головна" [ref=e11] [cursor=pointer]:
+              - /url: "#top"
+          - listitem [ref=e12]:
+            - link "Про клуб" [ref=e13] [cursor=pointer]:
+              - /url: "#about"
+          - listitem [ref=e14]:
+            - link "Можливості" [ref=e15] [cursor=pointer]:
+              - /url: "#opportunities"
+          - listitem [ref=e16]:
+            - link "Розклад" [ref=e17] [cursor=pointer]:
+              - /url: "#schedule"
+          - listitem [ref=e18]:
+            - link "Відеоблог" [ref=e19] [cursor=pointer]:
+              - /url: "#videos"
+          - listitem [ref=e20]:
+            - link "Відгуки" [ref=e21] [cursor=pointer]:
+              - /url: "#reviews"
+          - listitem [ref=e22]:
+            - link "Локація" [ref=e23] [cursor=pointer]:
+              - /url: "#location"
+          - listitem [ref=e24]:
+            - link "Записатися" [ref=e25] [cursor=pointer]:
+              - /url: https://t.me/JasonGoldenBachelor
+  - main [ref=e26]:
+    - generic [ref=e27]:
+      - generic [ref=e29]: Ваш браузер не підтримує відтворення відео. Київ Бадмінтон Олімп — бадмінтонний клуб у центрі Києва, ігри та тренування на 4 кортах біля метро «Олімпійська».
+      - generic [ref=e30]:
+        - generic [ref=e31]:
+          - heading "Київ Бадмінтон Олімп" [level=1] [ref=e32]
+          - paragraph [ref=e35]:
+            - generic [ref=e36]: Kyiv Badminton Olimp
+        - paragraph [ref=e38]: «Тут народжується справжній кайф від гри»
+        - generic [ref=e39]:
+          - link "Записатися на тренування" [ref=e40] [cursor=pointer]:
+            - /url: https://t.me/JasonGoldenBachelor
+          - link "Переглянути розклад" [ref=e41] [cursor=pointer]:
+            - /url: "#schedule"
+    - region "Можливості клубу" [ref=e42]:
+      - generic [ref=e44]:
+        - list [ref=e45]:
+          - listitem [ref=e46]:
+            - generic [ref=e47]: Тренування для початківців
+          - listitem [aria-hidden] [ref=e48]
+          - listitem [ref=e52]:
+            - generic [ref=e53]: Тренування для досвідчених гравців
+          - listitem [aria-hidden] [ref=e54]
+          - listitem [ref=e58]:
+            - generic [ref=e59]: Індивідуальна підготовка
+          - listitem [aria-hidden] [ref=e60]
+          - listitem [ref=e64]:
+            - generic [ref=e65]: Групові заняття
+          - listitem [aria-hidden] [ref=e66]
+          - listitem [ref=e70]:
+            - generic [ref=e71]: Ігрові сесії
+          - listitem [aria-hidden] [ref=e72]
+          - listitem [ref=e76]:
+            - generic [ref=e77]: Клубні зустрічі та турніри
+          - listitem [aria-hidden] [ref=e78]
+        - list [aria-hidden] [ref=e82]:
+          - listitem [ref=e83]:
+            - generic [ref=e84]: Тренування для початківців
+          - listitem [ref=e85]
+          - listitem [ref=e89]:
+            - generic [ref=e90]: Тренування для досвідчених гравців
+          - listitem [ref=e91]
+          - listitem [ref=e95]:
+            - generic [ref=e96]: Індивідуальна підготовка
+          - listitem [ref=e97]
+          - listitem [ref=e101]:
+            - generic [ref=e102]: Групові заняття
+          - listitem [ref=e103]
+          - listitem [ref=e107]:
+            - generic [ref=e108]: Ігрові сесії
+          - listitem [ref=e109]
+          - listitem [ref=e113]:
+            - generic [ref=e114]: Клубні зустрічі та турніри
+          - listitem [ref=e115]
+    - generic [ref=e121]:
+      - paragraph [ref=e122]: 01 — Про клуб
+      - heading "Це клуб, де кожна гра — твоя" [level=2] [ref=e123]
+      - paragraph [ref=e124]: Граємо в центрі Києва, біля метро «Олімпійська». Різні рівні, жива гра й компанія, до якої хочеться повертатися.
+      - generic [ref=e125]:
+        - generic [ref=e126]:
+          - generic [ref=e127]:
+            - generic [ref=e128]: "4"
+            - generic [ref=e129]: корти в центрі Києва
+          - generic [ref=e130]:
+            - generic [ref=e131]: "4"
+            - generic [ref=e132]: тренувальні дні на тиждень
+        - generic [ref=e133]:
+          - generic [ref=e134]:
+            - generic [ref=e135]: 2–2,5
+            - generic [ref=e136]: години активної гри
+          - generic [ref=e137]: Біля метро «Олімпійська»
+          - generic [ref=e139]: Різні рівні — одна команда
+    - generic [ref=e142]:
+      - paragraph [ref=e143]: 03 — Розклад
+      - heading "Обери свій день для гри" [level=2] [ref=e144]
+      - paragraph [ref=e145]: Чотири тренувальні дні на тиждень — обирай зручний час і виходь на корт.
+      - generic [ref=e146]:
+        - article [ref=e147]:
+          - generic [ref=e148]:
+            - generic [ref=e149]: Понеділок
+            - generic [ref=e150]: Лінгво
+            - heading "Старт тижня" [level=3] [ref=e151]
+          - generic [ref=e152]: 19:00–21:30
+        - article [ref=e154]:
+          - generic [ref=e155]:
+            - generic [ref=e156]: Середа
+            - generic [ref=e157]: Лінгво
+            - heading "Вечірній матч" [level=3] [ref=e158]
+          - generic [ref=e159]: 19:00–21:30
+        - article [ref=e161]:
+          - generic [ref=e162]:
+            - generic [ref=e163]: Субота
+            - generic [ref=e164]: Лінгво
+            - heading "Ранковий заряд" [level=3] [ref=e165]
+          - generic [ref=e166]: 11:00–13:00
+        - article [ref=e168]:
+          - generic [ref=e169]:
+            - generic [ref=e170]: Неділя
+            - generic [ref=e171]: НТУ
+            - heading "Легкий старт / фан-гейм" [level=3] [ref=e172]
+          - generic [ref=e173]: 11:00–13:00
+      - link "Записатися на тренування" [ref=e176] [cursor=pointer]:
+        - /url: https://t.me/JasonGoldenBachelor
+    - generic [ref=e178]:
+      - generic [ref=e179]:
+        - paragraph [ref=e180]: 04 — Відеоблог
+        - heading "Відеоблог" [level=2] [ref=e181]
+        - paragraph [ref=e182]: Тренування, ігрові моменти та атмосфера нашого клубу.
+      - generic [ref=e183]:
+        - button "Попереднє відео" [ref=e184] [cursor=pointer]: ‹
+        - list [ref=e185]:
+          - listitem [ref=e186]:
+            - 'generic "Відео: Атмосфера тренування" [ref=e188]'
+            - paragraph [ref=e189]: Атмосфера тренування
+          - listitem [ref=e190]:
+            - 'generic "Відео: У грі на корті" [ref=e192]'
+            - paragraph [ref=e193]: У грі на корті
+          - listitem [ref=e194]:
+            - 'generic "Відео: Обмін ударами" [ref=e196]'
+            - paragraph [ref=e197]: Обмін ударами
+          - listitem [ref=e198]:
+            - 'generic "Відео: Драйв на майданчику" [ref=e200]'
+            - paragraph [ref=e201]: Драйв на майданчику
+          - listitem [ref=e202]:
+            - 'generic "Відео: Настрій після матчу" [ref=e204]'
+            - paragraph [ref=e205]: Настрій після матчу
+          - listitem [ref=e206]:
+            - 'generic "Відео: Момент гри з клубу" [ref=e208]'
+            - paragraph [ref=e209]: Момент гри з клубу
+          - listitem [ref=e210]:
+            - 'generic "Відео: Нарізка з корту" [ref=e212]'
+            - paragraph [ref=e213]: Нарізка з корту
+          - listitem [ref=e214]:
+            - 'generic "Відео: Атмосфера клубу" [ref=e216]'
+            - paragraph [ref=e217]: Атмосфера клубу
+        - button "Наступне відео" [ref=e218] [cursor=pointer]: ›
+    - generic [ref=e219]:
+      - generic [ref=e222]:
+        - paragraph [ref=e223]: 05 — Відгуки
+        - heading "Що кажуть наші гравці" [level=2] [ref=e224]
+        - paragraph [ref=e225]: Жива гра, дружня атмосфера й люди, з якими хочеться зустрічатися знову.
+      - list [ref=e227]:
+        - listitem [ref=e228]:
+          - blockquote [ref=e229]:
+            - paragraph [ref=e230]: "Який класний зал для бадмінтону! Дуже сподобався. Після гри так добре відчула все тіло, ніби нарешті його розбудила, і стільки енергії з’явилося. Прийшла додому — і так продуктивно пішов день: багато питань вирішила, добре попрацювала, і весь час була на позитиві. Ще й люди цікаві, атмосфера хороша. Буду грати."
+          - generic [ref=e231]: Елена
+        - listitem [ref=e232]:
+          - blockquote [ref=e233]:
+            - paragraph [ref=e234]: Сюди на гру в бадмінтон мене затягнула подруга, за що їй величезне спасибі! ;) Це класне місце як для захопливого спорту, так і для спілкування у дружній атмосфері. Організатори чудові люди й змогли зібрати навколо себе людей, хоч і різних за віком, але зі спільним інтересом і приємних у спілкуванні...
+          - generic [ref=e235]: Юра Дудка
+        - listitem [ref=e236]:
+          - blockquote [ref=e237]:
+            - paragraph [ref=e238]: Дуже приємне враження від самого клубу і від того, як тут загалом влаштована атмосфера навколо тенісу. Для людини, яка багато працює віддалено і годинами сидить за комп’ютером, такий формат виглядає майже ідеальною розминкою одразу і для тіла, і для голови.
+          - generic [ref=e239]: Алексей Романчук
+        - listitem [ref=e240]:
+          - blockquote [ref=e241]:
+            - paragraph [ref=e242]: Хороший клуб, ходжу сюди із задоволенням. Атмосфера дуже дружня, новачків ніхто не ображає, до кожного намагаються знайти свій підхід. Грають люди найрізноманітніших рівнів.
+          - generic [ref=e243]: Nikita Popov
+    - generic [ref=e245]:
+      - paragraph [ref=e246]: 06 — Локація
+      - heading "Де нас знайти" [level=2] [ref=e247]
+      - generic [ref=e248]:
+        - paragraph [ref=e250]: Граємо в центрі Києва, біля метро «Олімпійська». Чотири корти чекають на тебе чотири рази на тиждень.
+        - generic [ref=e251]:
+          - link "Точка на карті" [ref=e252] [cursor=pointer]:
+            - /url: https://maps.app.goo.gl/f3iNQnwjXcawZh1E7
+          - link "Детальна карта" [ref=e253] [cursor=pointer]:
+            - /url: https://www.google.com.ua/maps/place/Kyiv+Badminton+Olymp/@50.427198,30.516661,18z/data=!4m6!3m5!1s0x40d4cf6f62af8173:0x385257915b639f18!8m2!3d50.4271979!4d30.5174266!16s%2Fg%2F11z6rfrchy
+    - generic [ref=e255]:
+      - paragraph [ref=e256]: See You on Court
+      - heading "Готовий відчути кайф від гри?" [level=2] [ref=e257]
+      - link "Записатися на тренування" [ref=e258] [cursor=pointer]:
+        - /url: https://t.me/JasonGoldenBachelor
+  - contentinfo [ref=e259]:
+    - generic [ref=e260]:
+      - generic [ref=e261]:
+        - img "Київ Бадмінтон Олімп" [ref=e262]
+        - generic [ref=e263]: Київ Бадмінтон Олімп
+      - navigation [ref=e264]:
+        - link "Про клуб" [ref=e265] [cursor=pointer]:
+          - /url: "#about"
+        - link "Розклад" [ref=e266] [cursor=pointer]:
+          - /url: "#schedule"
+        - link "Відеоблог" [ref=e267] [cursor=pointer]:
+          - /url: "#videos"
+        - link "Відгуки" [ref=e268] [cursor=pointer]:
+          - /url: "#reviews"
+        - link "Локація" [ref=e269] [cursor=pointer]:
+          - /url: "#location"
+      - link "Написати в Telegram" [ref=e270] [cursor=pointer]:
+        - /url: https://t.me/JasonGoldenBachelor
+    - paragraph [ref=e271]: Play. Smile. Repeat. · © Київ Бадмінтон Олімп
