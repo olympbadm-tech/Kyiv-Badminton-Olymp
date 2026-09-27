@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>{{general.seoTitle}}</title>
+<meta name="description" content="{{general.seoDescription}}">
+<link rel="icon" type="image/png" sizes="32x32" href="assets/img/favicon-32.png">
+<link rel="icon" type="image/png" sizes="512x512" href="assets/img/favicon-512.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Manrope:wght@400;500;600;700;800&family=Unbounded:wght@700;800;900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<a class="skip-link" href="#main">Перейти до контенту</a>
+
+<header class="site-header" id="site-header">
+  <div class="container header-inner">
+    <a href="#top" class="brand">
+      <img src="site-materials/logo.jpg" alt="Логотип Київ Бадмінтон Олімп" class="brand-logo">
+      <span class="brand-name">Київ Бадмінтон<br>Олімп</span>
+    </a>
+
+    <button class="burger" id="burger" aria-label="Відкрити меню" aria-expanded="false" aria-controls="nav-menu">
+      <span></span><span></span><span></span>
+    </button>
+
+    <nav class="nav" id="nav-menu">
+      <ul class="nav-list">
+        <li><a href="#top" class="nav-link">Головна</a></li>
+        <li><a href="#about" class="nav-link">Про клуб</a></li>
+        <li><a href="#opportunities" class="nav-link">Можливості</a></li>
+        <li><a href="#schedule" class="nav-link">Розклад</a></li>
+        <li><a href="#videos" class="nav-link">Відеоблог</a></li>
+        <li><a href="#reviews" class="nav-link">Відгуки</a></li>
+        <li><a href="#location" class="nav-link">Локація</a></li>
+        <li><a href="#interesting" class="nav-link">Цікаве</a></li>
+        <li><a href="{{general.signupUrl}}" class="nav-link nav-link--cta" target="_blank" rel="noopener">Записатися</a></li>
+      </ul>
+    </nav>
+    <div class="nav-overlay" id="nav-overlay"></div>
+  </div>
+</header>
+
+<main id="main">
+
+  <!-- HERO -->
+  <section class="hero" id="top">
+    <div class="hero-media" aria-hidden="true">
+      <video class="hero-video" autoplay muted loop playsinline preload="auto" poster="assets/img/hero-poster.jpg" tabindex="-1">
+        <source src="site-materials/hero/hero-video.mp4" type="video/mp4">
+        Ваш браузер не підтримує відтворення відео. Київ Бадмінтон Олімп — бадмінтонний клуб у центрі Києва, ігри та тренування на 4 кортах біля метро «Олімпійська».
+      </video>
+    </div>
+    <div class="hero-overlay" aria-hidden="true"></div>
+
+    <div class="container hero-inner">
+      <div class="hero-titles">
+        <h1 class="hero-title">
+          <span class="hero-brush hero-brush--yellow"><span class="hero-brush-text">{{hero.title}}</span></span>
+        </h1>
+        <p class="hero-subtitle">
+          <span class="hero-brush hero-brush--navy"><span class="hero-brush-text">{{hero.subtitle}}</span></span>
+        </p>
+      </div>
+      <p class="hero-slogan">{{hero.slogan}}</p>
+      <div class="hero-actions">
+        <a href="{{general.signupUrl}}" class="btn btn--primary" target="_blank" rel="noopener">{{hero.primaryButton}}</a>
+        <a href="#schedule" class="btn btn--ghost" data-scroll>{{hero.secondaryButton}}</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- OPPORTUNITIES TICKER -->
+  <section class="opportunities-ticker" id="opportunities" aria-label="Можливості клубу">
+    <div class="ticker-viewport" tabindex="0">
+      <div class="ticker-track">
+        <ul class="ticker-group">
+          {{#opportunities.items}}
+          <li class="ticker-item"><span class="ticker-pill">{{.}}</span></li>
+          <li class="ticker-sep" aria-hidden="true">
+            <svg class="ticker-shuttle" viewBox="0 0 26 32" focusable="false">
+              <path d="M13 2 C15.2 2 16.6 4.1 16.1 6.5 L20.6 24.1 C21.1 26.1 19.6 27.6 17.7 26.8 L13 24.9 L8.3 26.8 C6.4 27.6 4.9 26.1 5.4 24.1 L9.9 6.5 C9.4 4.1 10.8 2 13 2 Z" fill="currentColor"/>
+              <ellipse cx="13" cy="5.4" rx="3.2" ry="3.7" fill="currentColor"/>
+            </svg>
+          </li>
+          {{/opportunities.items}}
+        </ul>
+        <ul class="ticker-group ticker-group--dup" aria-hidden="true">
+          {{#opportunities.items}}
+          <li class="ticker-item"><span class="ticker-pill">{{.}}</span></li>
+          <li class="ticker-sep">
+            <svg class="ticker-shuttle" viewBox="0 0 26 32" focusable="false">
+              <path d="M13 2 C15.2 2 16.6 4.1 16.1 6.5 L20.6 24.1 C21.1 26.1 19.6 27.6 17.7 26.8 L13 24.9 L8.3 26.8 C6.4 27.6 4.9 26.1 5.4 24.1 L9.9 6.5 C9.4 4.1 10.8 2 13 2 Z" fill="currentColor"/>
+              <ellipse cx="13" cy="5.4" rx="3.2" ry="3.7" fill="currentColor"/>
+            </svg>
+          </li>
+          {{/opportunities.items}}
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- PRO CLUB -->
+  <section class="section about-section" id="about">
+    <div class="about-bg" aria-hidden="true"></div>
+
+    <div class="about-decor" aria-hidden="true">
+      <div class="about-shuttle-track">
+        <svg class="about-trail" viewBox="0 0 240 120" focusable="false">
+          <path class="trail-line trail-line--1" pathLength="100"
+                d="M20,60 C20,20 100,20 120,60 C140,100 220,100 220,60 C220,20 140,20 120,60 C100,100 20,100 20,60 Z"/>
+          <path class="trail-line trail-line--2" pathLength="100"
+                d="M20,60 C20,20 100,20 120,60 C140,100 220,100 220,60 C220,20 140,20 120,60 C100,100 20,100 20,60 Z"/>
+          <path class="trail-line trail-line--3" pathLength="100"
+                d="M20,60 C20,20 100,20 120,60 C140,100 220,100 220,60 C220,20 140,20 120,60 C100,100 20,100 20,60 Z"/>
+        </svg>
+        <div class="about-shuttle">
+          <svg viewBox="0 0 26 32" class="about-shuttle-icon" focusable="false">
+            <path d="M13 2 C15.2 2 16.6 4.1 16.1 6.5 L20.6 24.1 C21.1 26.1 19.6 27.6 17.7 26.8 L13 24.9 L8.3 26.8 C6.4 27.6 4.9 26.1 5.4 24.1 L9.9 6.5 C9.4 4.1 10.8 2 13 2 Z" fill="#ffffff" fill-opacity="0.95"/>
+            <path d="M13 6.2 L13 24.6 M13 6.2 L9.3 23.7 M13 6.2 L16.7 23.7" stroke="rgba(14,31,110,0.3)" stroke-width="0.6" fill="none"/>
+            <ellipse cx="13" cy="5.4" rx="3.2" ry="3.7" fill="#f3f5fb"/>
+          </svg>
+        </div>
+      </div>
+    </div>
+
+    <div class="container about-inner">
+      <p class="about-kicker">{{about.kicker}}</p>
+      <h2 class="about-title">{{about.title}}</h2>
+      <p class="about-lead">{{about.lead}}</p>
+
+      <div class="about-cards">
+        {{#about.columns}}
+        <div class="about-cards-col about-cards-col--{{id}}">
+          {{#cards}}
+          <div class="about-card about-card--{{color}}{{^number}} about-card--wide{{/number}}">
+            {{#number}}
+            <span class="about-card-number">{{number}}</span>
+            {{/number}}
+            <span class="about-card-label">{{label}}</span>
+          </div>
+          {{/cards}}
+        </div>
+        {{/about.columns}}
+      </div>
+    </div>
+  </section>
+
+  <!-- SCHEDULE -->
+  <section class="section schedule-section" id="schedule">
+    <div class="schedule-decor" aria-hidden="true">
+      <div class="schedule-shuttle-track">
+        <div class="schedule-shuttle">
+          <svg viewBox="0 0 26 32" class="schedule-shuttle-icon" focusable="false">
+            <path d="M13 2 C15.2 2 16.6 4.1 16.1 6.5 L20.6 24.1 C21.1 26.1 19.6 27.6 17.7 26.8 L13 24.9 L8.3 26.8 C6.4 27.6 4.9 26.1 5.4 24.1 L9.9 6.5 C9.4 4.1 10.8 2 13 2 Z" fill="var(--color-blue)" fill-opacity="0.5"/>
+            <path d="M13 6.2 L13 24.6 M13 6.2 L9.3 23.7 M13 6.2 L16.7 23.7" stroke="var(--color-blue)" stroke-opacity="0.25" stroke-width="0.6" fill="none"/>
+            <ellipse cx="13" cy="5.4" rx="3.2" ry="3.7" fill="var(--color-blue)" fill-opacity="0.75"/>
+          </svg>
+        </div>
+      </div>
+    </div>
+
+    <div class="container schedule-inner">
+      <p class="section-kicker">{{schedule.kicker}}</p>
+      <h2 class="section-title">{{schedule.title}}</h2>
+      <p class="schedule-lead">{{schedule.lead}}</p>
+
+      <div class="schedule-cards">
+        {{#schedule.cards}}
+        <article class="schedule-card schedule-card--{{color}}">
+          <div class="schedule-card-top">
+            <span class="schedule-card-day">{{day}}</span>
+            {{#place}}
+            <span class="schedule-card-place">{{place}}</span>
+            {{/place}}
+            <h3 class="schedule-card-name">{{name}}</h3>
+          </div>
+          <div class="schedule-card-time">
+            <span class="schedule-card-time-value">{{time}}</span>
+          </div>
+        </article>
+        {{/schedule.cards}}
+      </div>
+
+      <div class="schedule-cta">
+        <a href="{{general.signupUrl}}" class="btn btn--primary" target="_blank" rel="noopener">{{schedule.ctaText}}</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- VIDEOBLOG -->
+  <section class="section section--dark" id="videos">
+    <div class="container container--full">
+      <div class="container">
+        <p class="section-kicker">{{videos.kicker}}</p>
+        <h2 class="section-title">{{videos.title}}</h2>
+        <p class="section-lead">{{videos.lead}}</p>
+      </div>
+
+      <div class="carousel-wrap">
+        <button class="carousel-arrow carousel-arrow--prev" id="carousel-prev" aria-label="Попереднє відео">‹</button>
+        <ul class="carousel" id="video-carousel">
+
+          {{#videos.items}}
+          <li class="video-card">
+            <div class="video-frame">
+              <video class="video-el" preload="metadata" playsinline controls
+                     aria-label="Відео: {{caption}}"
+                     poster="{{poster}}"
+                     src="{{src}}">
+              </video>
+            </div>
+            <p class="video-caption">{{caption}}</p>
+          </li>
+
+          {{/videos.items}}
+        </ul>
+        <button class="carousel-arrow carousel-arrow--next" id="carousel-next" aria-label="Наступне відео">›</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- REVIEWS -->
+  <section class="section reviews-section" id="reviews">
+    <div class="reviews-bg" aria-hidden="true">
+      <img class="reviews-photo" src="site-materials/reviews/reviews-background.png" alt="Гравці клубу відпочивають на лавці в спортивному залі після гри" loading="lazy" width="1530" height="668">
+    </div>
+
+    <div class="container reviews-head">
+      <p class="section-kicker">{{reviews.kicker}}</p>
+      <h2 class="section-title">{{reviews.title}}</h2>
+      <p class="reviews-lead">{{reviews.lead}}</p>
+    </div>
+
+    <div class="reviews-cards-wrap">
+      <ul class="reviews-grid">
+        {{#reviews.items}}
+        <li class="review-card review-card--{{color}}">
+          <blockquote class="review-text">
+            {{#paragraphs}}
+            <p>{{.}}</p>
+            {{/paragraphs}}
+          </blockquote>
+          <cite class="review-author">{{author}}</cite>
+        </li>
+        {{/reviews.items}}
+      </ul>
+    </div>
+  </section>
+
+  <!-- LOCATION -->
+  <section class="section section--dark" id="location">
+    <div class="container">
+      <p class="section-kicker">{{location.kicker}}</p>
+      <h2 class="section-title">{{location.title}}</h2>
+      <div class="location-wrap">
+        <div class="location-text">
+          {{#location.paragraphs}}
+          <p>{{.}}</p>
+          {{/location.paragraphs}}
+        </div>
+        <div class="location-actions">
+          {{#location.links}}
+          <a class="btn btn--outline" href="{{url}}" target="_blank" rel="noopener">{{label}}</a>
+          {{/location.links}}
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- INTERESTING -->
+  <section class="section interesting-section" id="interesting">
+    <div class="container">
+      <p class="section-kicker">{{interesting.kicker}}</p>
+      <h2 class="section-title">{{interesting.title}}</h2>
+      <p class="interesting-lead">{{interesting.lead}}</p>
+
+      <ul class="interesting-cards">
+        {{#interesting.cards}}
+        <li class="interesting-card interesting-card--{{color}}">
+          <p class="interesting-card-meta"><span>{{type}}{{#showSep}} · {{/showSep}}{{#date}}<time datetime="{{date}}">{{dateDisplay}}</time>{{/date}}</span>{{#source}}<span>{{source}}</span>{{/source}}</p>
+          {{#thumb}}
+          <a class="interesting-card-thumb" href="{{url}}" target="_blank" rel="noopener" aria-label="{{thumbAria}}">
+            <img src="{{thumb}}" alt="" loading="lazy" width="480" height="360">
+            {{#isVideo}}
+            <span class="interesting-card-play" aria-hidden="true"></span>
+            {{/isVideo}}
+          </a>
+          {{/thumb}}
+          <h3 class="interesting-card-title">{{title}}</h3>
+          <p class="interesting-card-text">{{text}}</p>
+          <a class="interesting-card-link" href="{{url}}" target="_blank" rel="noopener">{{linkText}}</a>
+        </li>
+        {{/interesting.cards}}
+      </ul>
+    </div>
+  </section>
+
+  <!-- FINAL CTA -->
+  <section class="cta-final" id="signup">
+    <div class="cta-final-media" aria-hidden="true">
+      <video class="cta-final-video" autoplay muted loop playsinline preload="metadata" tabindex="-1">
+        <source src="site-materials/video/cta-background.mp4" type="video/mp4">
+      </video>
+    </div>
+    <div class="cta-final-overlay" aria-hidden="true"></div>
+
+    <div class="container cta-final-inner">
+      <p class="eyebrow">{{cta.eyebrow}}</p>
+      <h2 class="cta-title">
+        <span class="cta-final-plaque"><span class="cta-final-plaque-text">{{cta.title}}</span></span>
+      </h2>
+      <a href="{{general.signupUrl}}" class="btn btn--primary btn--big" target="_blank" rel="noopener">{{cta.buttonText}}</a>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="container footer-inner">
+    <div class="footer-brand">
+      <img src="site-materials/logo.jpg" alt="Київ Бадмінтон Олімп" class="footer-logo">
+      <span>Київ Бадмінтон Олімп</span>
+    </div>
+    <nav class="footer-nav">
+      <a href="#about">Про клуб</a>
+      <a href="#schedule">Розклад</a>
+      <a href="#videos">Відеоблог</a>
+      <a href="#reviews">Відгуки</a>
+      <a href="#location">Локація</a>
+    </nav>
+    <div class="footer-social">
+      <a class="footer-social-link" href="{{footer.instagram}}" target="_blank" rel="noopener" aria-label="Instagram">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2c-2.72 0-3.06.01-4.12.06-1.06.05-1.79.22-2.43.47-.66.26-1.22.6-1.77 1.15A4.9 4.9 0 0 0 2.53 5.45c-.25.64-.42 1.37-.47 2.43C2.01 8.94 2 9.28 2 12s.01 3.06.06 4.12c.05 1.06.22 1.79.47 2.43.26.66.6 1.22 1.15 1.77.55.55 1.11.9 1.77 1.15.64.25 1.37.42 2.43.47C8.94 21.99 9.28 22 12 22s3.06-.01 4.12-.06c1.06-.05 1.79-.22 2.43-.47.66-.26 1.22-.6 1.77-1.15.55-.55.9-1.11 1.15-1.77.25-.64.42-1.37.47-2.43.05-1.06.06-1.4.06-4.12s-.01-3.06-.06-4.12c-.05-1.06-.22-1.79-.47-2.43a4.9 4.9 0 0 0-1.15-1.77 4.9 4.9 0 0 0-1.77-1.15c-.64-.25-1.37-.42-2.43-.47C15.06 2.01 14.72 2 12 2Zm0 1.8c2.67 0 2.99.01 4.04.06.98.04 1.5.21 1.85.34.47.18.8.4 1.15.75.35.35.57.68.75 1.15.13.35.3.87.34 1.85.05 1.05.06 1.37.06 4.04s-.01 2.99-.06 4.04c-.04.98-.21 1.5-.34 1.85-.18.47-.4.8-.75 1.15-.35.35-.68.57-1.15.75-.35.13-.87.3-1.85.34-1.05.05-1.37.06-4.04.06s-2.99-.01-4.04-.06c-.98-.04-1.5-.21-1.85-.34-.47-.18-.8-.4-1.15-.75a3.1 3.1 0 0 1-.75-1.15c-.13-.35-.3-.87-.34-1.85C3.81 14.99 3.8 14.67 3.8 12s.01-2.99.06-4.04c.04-.98.21-1.5.34-1.85.18-.47.4-.8.75-1.15.35-.35.68-.57 1.15-.75.35-.13.87-.3 1.85-.34C8.99 3.81 9.33 3.8 12 3.8Zm0 3.32a4.88 4.88 0 1 0 0 9.76 4.88 4.88 0 0 0 0-9.76Zm0 8.05a3.17 3.17 0 1 1 0-6.34 3.17 3.17 0 0 1 0 6.34Zm5.07-8.24a1.14 1.14 0 1 1-2.28 0 1.14 1.14 0 0 1 2.28 0Z"/></svg>
+      </a>
+      <a class="footer-social-link" href="{{footer.facebook}}" target="_blank" rel="noopener" aria-label="Facebook">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M13.5 21v-7.6h2.55l.38-2.96h-2.93V8.55c0-.86.24-1.44 1.47-1.44h1.57V4.46c-.27-.04-1.2-.12-2.29-.12-2.26 0-3.81 1.38-3.81 3.92v2.18H8v2.96h2.44V21h3.06Z"/></svg>
+      </a>
+    </div>
+    <a class="footer-cta" href="{{general.signupUrl}}" target="_blank" rel="noopener">Написати в Telegram</a>
+  </div>
+  <p class="footer-note">{{footer.note}}</p>
+</footer>
+
+<script src="js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="robots" content="noindex, nofollow">
+<title>Адмінка — Київ Бадмінтон Олімп</title>
+<link rel="icon" type="image/png" sizes="32x32" href="/assets/img/favicon-32.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/admin/admin.css">
+</head>
+<body>
+
+<div class="screen screen--center" id="loading">
+  <p class="muted">Завантаження…</p>
+</div>
+
+<div class="screen screen--center" id="login" hidden>
+  <form class="login-card" id="login-form" novalidate>
+    <img src="/site-materials/logo.jpg" alt="" class="login-logo" width="72" height="72">
+    <h1 class="login-title">Адмінка сайту</h1>
+    <p class="muted" id="login-note">Київ Бадмінтон Олімп</p>
+    <label class="field-label" for="login-password">Пароль</label>
+    <input class="input" type="password" id="login-password" autocomplete="current-password" required>
+    <p class="form-error" id="login-error" role="alert" hidden></p>
+    <button class="btn btn--primary btn--block" type="submit" id="login-submit">Увійти</button>
+  </form>
+</div>
+
+<div class="app" id="app" hidden>
+  <header class="topbar">
+    <div class="topbar-brand">
+      <img src="/site-materials/logo.jpg" alt="" width="36" height="36">
+      <span>Адмінка <b>Олімп</b></span>
+    </div>
+    <div class="topbar-actions">
+      <a class="btn btn--ghost btn--small" href="/" target="_blank" rel="noopener">Відкрити сайт ↗</a>
+      <button class="btn btn--ghost btn--small" type="button" id="logout">Вийти</button>
+    </div>
+  </header>
+
+  <div class="layout">
+    <nav class="sidenav" aria-label="Розділи сайту">
+      <label class="field-label sidenav-select-label" for="section-select">Розділ</label>
+      <select class="input sidenav-select" id="section-select"></select>
+      <ul class="sidenav-list" id="section-list"></ul>
+    </nav>
+
+    <main class="main" id="main">
+      <div class="errors-panel" id="errors-panel" role="alert" hidden></div>
+      <div id="section"></div>
+    </main>
+  </div>
+
+  <footer class="savebar">
+    <p class="savebar-status" id="save-status" role="status" aria-live="polite"></p>
+    <button class="btn btn--primary" type="button" id="save">Зберегти</button>
+  </footer>
+</div>
+
+<dialog class="dialog" id="dialog">
+  <form method="dialog">
+    <p class="dialog-text" id="dialog-text"></p>
+    <div class="dialog-actions" id="dialog-actions"></div>
+  </form>
+</dialog>
+
+<script src="/admin/admin.js"></script>
+</body>
+</html>
