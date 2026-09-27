@@ -89,6 +89,7 @@ async function main() {
     fs.cpSync(path.join(ROOT, dir), path.join(DIST, dir), { recursive: true });
   }
   fs.copyFileSync(path.join(ROOT, 'robots.txt'), path.join(DIST, 'robots.txt'));
+  fs.copyFileSync(path.join(ROOT, 'sitemap.xml'), path.join(DIST, 'sitemap.xml'));
 
   const adminOut = path.join(DIST, 'admin');
   fs.mkdirSync(adminOut, { recursive: true });
