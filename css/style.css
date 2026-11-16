@@ -747,15 +747,16 @@ button { font: inherit; cursor: pointer; }
 
 .schedule-cards {
   display: grid;
-  grid-template-columns: repeat(2, minmax(240px, 320px));
+  grid-template-columns: repeat(3, minmax(240px, 300px));
   gap: 30px 34px;
-  max-width: 720px;
+  max-width: 1000px;
   margin-bottom: 48px;
 }
 .schedule-cards > .schedule-card:nth-child(1) { transform: rotate(-1.4deg); }
 .schedule-cards > .schedule-card:nth-child(2) { transform: rotate(1.2deg) translateY(16px); }
-.schedule-cards > .schedule-card:nth-child(3) { transform: rotate(1deg) translateY(6px); }
+.schedule-cards > .schedule-card:nth-child(3) { transform: rotate(-1.1deg) translateY(-4px); }
 .schedule-cards > .schedule-card:nth-child(4) { transform: rotate(-1.3deg) translateY(-8px); }
+.schedule-cards > .schedule-card:nth-child(5) { transform: rotate(1.2deg) translateY(4px); }
 
 .schedule-card {
   border-radius: 20px;
