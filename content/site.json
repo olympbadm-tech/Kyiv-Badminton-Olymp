@@ -26,11 +26,36 @@
     "title": "Це клуб, де кожна гра — твоя",
     "lead": "Граємо в центрі Києва, біля метро «Олімпійська». Різні рівні, жива гра й компанія, до якої хочеться повертатися.",
     "cards": [
-      { "column": "a", "number": "4", "label": "корти в центрі Києва", "color": "navy" },
-      { "column": "a", "number": "4", "label": "тренувальні дні на тиждень", "color": "blue" },
-      { "column": "b", "number": "2–2,5", "label": "години активної гри", "color": "lime" },
-      { "column": "b", "number": "", "label": "Біля метро «Олімпійська»", "color": "yellow" },
-      { "column": "b", "number": "", "label": "Різні рівні — одна команда", "color": "glass" }
+      {
+        "column": "a",
+        "number": "4",
+        "label": "корти в центрі Києва",
+        "color": "navy"
+      },
+      {
+        "column": "a",
+        "number": "4",
+        "label": "тренувальні дні на тиждень",
+        "color": "blue"
+      },
+      {
+        "column": "b",
+        "number": "2–2,5",
+        "label": "години активної гри",
+        "color": "lime"
+      },
+      {
+        "column": "b",
+        "number": "",
+        "label": "Біля метро «Олімпійська»",
+        "color": "yellow"
+      },
+      {
+        "column": "b",
+        "number": "",
+        "label": "Різні рівні — одна команда",
+        "color": "glass"
+      }
     ]
   },
   "schedule": {
@@ -39,11 +64,34 @@
     "lead": "П’ять тренувальних днів на тиждень — обирай зручний час і виходь на корт.",
     "ctaText": "Записатися на тренування",
     "cards": [
-      { "day": "Понеділок", "place": "Лінгво", "name": "Старт тижня", "time": "18:00–22:00", "color": "blue" },
-      { "day": "Середа", "place": "Лінгво", "name": "Вечірній матч", "time": "18:00–22:00", "color": "lime" },
-      { "day": "П’ятниця", "place": "Лінгво", "name": "П’ятничний драйв", "time": "18:00–22:00", "color": "outline" },
-      { "day": "Субота", "place": "Лінгво", "name": "Ранковий заряд", "time": "10:00–14:00", "color": "yellow" },
-      { "day": "Неділя", "place": "Лінгво", "name": "Легкий старт / фан-гейм", "time": "10:00–14:00", "color": "outline" }
+      {
+        "day": "Понеділок",
+        "place": "Лінгво",
+        "name": "Старт тижня",
+        "time": "19:00–21:30",
+        "color": "blue"
+      },
+      {
+        "day": "Середа",
+        "place": "Лінгво",
+        "name": "Вечірній матч",
+        "time": "19:00–21:30",
+        "color": "lime"
+      },
+      {
+        "day": "Субота",
+        "place": "Лінгво",
+        "name": "Ранковий заряд",
+        "time": "11:00–13:00",
+        "color": "yellow"
+      },
+      {
+        "day": "Неділя",
+        "place": "НТУ",
+        "name": "Легкий старт / фан-гейм",
+        "time": "11:00–13:00",
+        "color": "outline"
+      }
     ]
   },
   "videos": {
@@ -51,14 +99,41 @@
     "title": "Відеоблог",
     "lead": "Тренування, ігрові моменти та атмосфера нашого клубу.",
     "items": [
-      { "src": "site-materials/video-blog/video-blog-01.mp4", "poster": "assets/posters/video-blog-01.jpg", "caption": "Атмосфера тренування" },
-      { "src": "site-materials/video-blog/video-blog-02.mp4", "poster": "assets/posters/video-blog-02.jpg", "caption": "У грі на корті" },
-      { "src": "site-materials/video-blog/video-blog-03.mp4", "poster": "assets/posters/video-blog-03.jpg", "caption": "Обмін ударами" },
-      { "src": "site-materials/video-blog/video-blog-04.mp4", "poster": "assets/posters/video-blog-04.jpg", "caption": "Драйв на майданчику" },
-      { "src": "site-materials/video-blog/video-blog-05.mp4", "poster": "assets/posters/video-blog-05.jpg", "caption": "Настрій після матчу" },
-      { "src": "site-materials/video-blog/video-blog-06.mp4", "poster": "assets/posters/video-blog-06.jpg", "caption": "Момент гри з клубу" },
-      { "src": "site-materials/video-blog/video-blog-07.mp4", "poster": "assets/posters/video-blog-07.jpg", "caption": "Нарізка з корту" },
-      { "src": "site-materials/video-blog/video-blog-08.mp4", "poster": "assets/posters/video-blog-08.jpg", "caption": "Атмосфера клубу" }
+      {
+        "src": "site-materials/video-blog/video-blog-02.mp4",
+        "poster": "assets/posters/video-blog-02.jpg",
+        "caption": "У грі на корті"
+      },
+      {
+        "src": "https://bijmjry0wy7nxyd9.public.blob.vercel-storage.com/uploads/video-20261114-video-2026-11-14-14-49-06-O8nz0GBqxyCYd7YEtJH9C49yFpiTOB.mp4",
+        "poster": "https://bijmjry0wy7nxyd9.public.blob.vercel-storage.com/uploads/image-20261114-video-2026-11-14-14-49-06-frame-at-0m1s-KvRBMjx9aPcTCv8zeLshaKGMiwtUey.jpg",
+        "caption": "Атмосфера тренування"
+      },
+      {
+        "src": "https://bijmjry0wy7nxyd9.public.blob.vercel-storage.com/uploads/video-20261114-video-2026-11-14-14-49-20-rZi5rISYKKGuED7r8mIv4BTvBeBNEZ.mp4",
+        "poster": "https://bijmjry0wy7nxyd9.public.blob.vercel-storage.com/uploads/image-20261114-video-2026-11-14-14-49-20-frame-at-0m1s-cX81K9Vf6B9lqBxNMsaNa8tybTevIU.jpg",
+        "caption": "Обмін ударами"
+      },
+      {
+        "src": "https://bijmjry0wy7nxyd9.public.blob.vercel-storage.com/uploads/video-20261114-video-2026-11-14-14-48-43-GFwpe6axRYedYgt2RyPndHPpdn4Yf2.mp4",
+        "poster": "https://bijmjry0wy7nxyd9.public.blob.vercel-storage.com/uploads/image-20261114-video-2026-11-14-14-48-43-frame-at-0m3s-XmW272jqrD5av0kBi8m3XejSHA6bXI.jpg",
+        "caption": "Драйв на майданчику"
+      },
+      {
+        "src": "https://bijmjry0wy7nxyd9.public.blob.vercel-storage.com/uploads/video-20261114-video-2026-11-14-15-14-49-SjBknojtLffSgK4fWIcjFQ7oj4ayJv.mp4",
+        "poster": "https://bijmjry0wy7nxyd9.public.blob.vercel-storage.com/uploads/image-20261114-video-2026-11-14-15-14-49-frame-at-0m5s-vhFru2mbolPvQh2M7uB1nbgteCyl2r.jpg",
+        "caption": "Настрій після матчу"
+      },
+      {
+        "src": "https://bijmjry0wy7nxyd9.public.blob.vercel-storage.com/uploads/video-20261114-video-2026-11-14-14-58-12-silrfEEJ3CU4gIrQXlG8cFW9VU3OA6.mp4",
+        "poster": "https://bijmjry0wy7nxyd9.public.blob.vercel-storage.com/uploads/image-20261114-video-2026-11-14-14-58-12-frame-at-0m1s-fxd32Aow74mVK23gYMGGgxebbghWpC.jpg",
+        "caption": "Нарізка з корту"
+      },
+      {
+        "src": "site-materials/video-blog/video-blog-08.mp4",
+        "poster": "assets/posters/video-blog-08.jpg",
+        "caption": "Атмосфера клубу"
+      }
     ]
   },
   "reviews": {
@@ -66,10 +141,26 @@
     "title": "Що кажуть наші гравці",
     "lead": "Жива гра, дружня атмосфера й люди, з якими хочеться зустрічатися знову.",
     "items": [
-      { "text": "Який класний зал для бадмінтону! Дуже сподобався. Після гри так добре відчула все тіло, ніби нарешті його розбудила, і стільки енергії з’явилося. Прийшла додому — і так продуктивно пішов день: багато питань вирішила, добре попрацювала, і весь час була на позитиві. Ще й люди цікаві, атмосфера хороша. Буду грати.", "author": "Елена", "color": "navy" },
-      { "text": "Сюди на гру в бадмінтон мене затягнула подруга, за що їй величезне спасибі! ;) Це класне місце як для захопливого спорту, так і для спілкування у дружній атмосфері. Організатори чудові люди й змогли зібрати навколо себе людей, хоч і різних за віком, але зі спільним інтересом і приємних у спілкуванні...", "author": "Юра Дудка", "color": "lime" },
-      { "text": "Дуже приємне враження від самого клубу і від того, як тут загалом влаштована атмосфера навколо тенісу. Для людини, яка багато працює віддалено і годинами сидить за комп’ютером, такий формат виглядає майже ідеальною розминкою одразу і для тіла, і для голови.", "author": "Алексей Романчук", "color": "blue" },
-      { "text": "Хороший клуб, ходжу сюди із задоволенням. Атмосфера дуже дружня, новачків ніхто не ображає, до кожного намагаються знайти свій підхід. Грають люди найрізноманітніших рівнів.", "author": "Nikita Popov", "color": "green" }
+      {
+        "text": "Який класний зал для бадмінтону! Дуже сподобався. Після гри так добре відчула все тіло, ніби нарешті його розбудила, і стільки енергії з’явилося. Прийшла додому — і так продуктивно пішов день: багато питань вирішила, добре попрацювала, і весь час була на позитиві. Ще й люди цікаві, атмосфера хороша. Буду грати.",
+        "author": "Елена",
+        "color": "navy"
+      },
+      {
+        "text": "Сюди на гру в бадмінтон мене затягнула подруга, за що їй величезне спасибі! ;) Це класне місце як для захопливого спорту, так і для спілкування у дружній атмосфері. Організатори чудові люди й змогли зібрати навколо себе людей, хоч і різних за віком, але зі спільним інтересом і приємних у спілкуванні...",
+        "author": "Юра Дудка",
+        "color": "lime"
+      },
+      {
+        "text": "Дуже приємне враження від самого клубу і від того, як тут загалом влаштована атмосфера навколо тенісу. Для людини, яка багато працює віддалено і годинами сидить за комп’ютером, такий формат виглядає майже ідеальною розминкою одразу і для тіла, і для голови.",
+        "author": "Алексей Романчук",
+        "color": "blue"
+      },
+      {
+        "text": "Хороший клуб, ходжу сюди із задоволенням. Атмосфера дуже дружня, новачків ніхто не ображає, до кожного намагаються знайти свій підхід. Грають люди найрізноманітніших рівнів.",
+        "author": "Nikita Popov",
+        "color": "green"
+      }
     ]
   },
   "location": {
@@ -77,8 +168,14 @@
     "title": "Де нас знайти",
     "text": "Граємо в центрі Києва, біля метро «Олімпійська». Чотири корти чекають на тебе чотири рази на тиждень.",
     "links": [
-      { "label": "Точка на карті", "url": "https://maps.app.goo.gl/f3iNQnwjXcawZh1E7" },
-      { "label": "Детальна карта", "url": "https://www.google.com.ua/maps/place/Kyiv+Badminton+Olymp/@50.427198,30.516661,18z/data=!4m6!3m5!1s0x40d4cf6f62af8173:0x385257915b639f18!8m2!3d50.4271979!4d30.5174266!16s%2Fg%2F11z6rfrchy" }
+      {
+        "label": "Точка на карті",
+        "url": "https://maps.app.goo.gl/f3iNQnwjXcawZh1E7"
+      },
+      {
+        "label": "Детальна карта",
+        "url": "https://www.google.com.ua/maps/place/Kyiv+Badminton+Olymp/@50.427198,30.516661,18z/data=!4m6!3m5!1s0x40d4cf6f62af8173:0x385257915b639f18!8m2!3d50.4271979!4d30.5174266!16s%2Fg%2F11z6rfrchy"
+      }
     ]
   },
   "interesting": {
