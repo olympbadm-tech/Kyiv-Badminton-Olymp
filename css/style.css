@@ -9,6 +9,7 @@
   --color-blue-deep: #0e1f6e;
   --color-yellow: #ffd23f;
   --color-grey: #8a8d97;
+  --color-asphalt: #34495e;
   --color-line: rgba(255, 255, 255, 0.1);
 
   --font-display: 'Bebas Neue', sans-serif;
@@ -720,6 +721,62 @@ button { font: inherit; cursor: pointer; }
 }
 @media (prefers-reduced-motion: no-preference) and (max-width: 520px) {
   .ticker-track { animation-duration: 50s; }
+}
+
+/* ===== Newcomers ===== */
+.newcomers-section { background: var(--color-asphalt); }
+.newcomers-lead {
+  font-size: clamp(15px, 1.6vw, 17px);
+  font-weight: 600;
+  color: rgba(255,255,255,.82);
+  line-height: 1.55;
+  max-width: 680px;
+  margin-top: -20px;
+  margin-bottom: 48px;
+}
+.newcomers-cards {
+  list-style: none;
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  gap: 26px 28px;
+}
+.newcomers-card {
+  grid-column: span 2;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  padding: 24px 26px;
+  border-radius: 20px;
+  box-shadow: 0 10px 26px rgba(4,8,20,.28);
+}
+.newcomers-card:nth-child(4),
+.newcomers-card:nth-child(5) { grid-column: span 3; }
+.newcomers-cards > .newcomers-card:nth-child(1) { transform: rotate(-1.4deg); }
+.newcomers-cards > .newcomers-card:nth-child(2) { transform: rotate(1.2deg) translateY(10px); }
+.newcomers-cards > .newcomers-card:nth-child(3) { transform: rotate(-1deg) translateY(2px); }
+.newcomers-cards > .newcomers-card:nth-child(4) { transform: rotate(1deg) translateY(4px); }
+.newcomers-cards > .newcomers-card:nth-child(5) { transform: rotate(-1.2deg) translateY(-2px); }
+.newcomers-card--blue { background: var(--color-blue); color: var(--color-white); }
+.newcomers-card--navy { background: var(--color-blue-deep); color: var(--color-white); }
+.newcomers-card--lime { background: #d9f28c; color: var(--color-blue-deep); }
+.newcomers-card--yellow { background: var(--color-yellow); color: var(--color-blue-deep); }
+.newcomers-card-icon { font-size: 32px; line-height: 1; }
+.newcomers-card-text {
+  font-size: clamp(16px, 1.7vw, 19px);
+  font-weight: 700;
+  line-height: 1.4;
+}
+@media (max-width: 860px) {
+  .newcomers-cards { grid-template-columns: repeat(2, 1fr); gap: 20px; }
+  .newcomers-card,
+  .newcomers-card:nth-child(4) { grid-column: span 1; }
+  .newcomers-card:nth-child(5) { grid-column: span 2; }
+  .newcomers-cards > .newcomers-card { transform: none !important; }
+}
+@media (max-width: 520px) {
+  .newcomers-lead { margin-top: -10px; margin-bottom: 36px; }
+  .newcomers-cards { grid-template-columns: 1fr; gap: 14px; }
+  .newcomers-card:nth-child(5) { grid-column: span 1; }
 }
 
 /* ===== Schedule ===== */

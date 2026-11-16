@@ -150,6 +150,24 @@
     </div>
   </section>
 
+  <!-- NEWCOMERS -->
+  <section class="section section--dark newcomers-section" id="newcomers">
+    <div class="container">
+      <p class="section-kicker">{{newcomers.kicker}}</p>
+      <h2 class="section-title">{{newcomers.title}}</h2>
+      <p class="newcomers-lead">{{newcomers.lead}}</p>
+
+      <ul class="newcomers-cards">
+        {{#newcomers.cards}}
+        <li class="newcomers-card newcomers-card--{{color}}">
+          {{#icon}}<span class="newcomers-card-icon" aria-hidden="true">{{icon}}</span>{{/icon}}
+          <p class="newcomers-card-text">{{text}}</p>
+        </li>
+        {{/newcomers.cards}}
+      </ul>
+    </div>
+  </section>
+
   <!-- SCHEDULE -->
   <section class="section schedule-section" id="schedule">
     <div class="schedule-decor" aria-hidden="true">
